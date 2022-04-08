@@ -10,10 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieSession( { keys: ["asdfdfd"] }));
 app.use(router);
 
-app.get("/", (req: Request, res: Response) => {
-    res.send("Hi there!");
-})
-
 app.listen(port, () => {
     console.log(`Your server is working on: localhost:${port}`);
 });

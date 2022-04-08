@@ -12,9 +12,6 @@ const port = 3000;
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use((0, cookie_session_1.default)({ keys: ["asdfdfd"] }));
 app.use(loginRoutes_1.router);
-app.get("/", (req, res) => {
-    res.send("Hi there!");
-});
 app.listen(port, () => {
     console.log(`Your server is working on: localhost:${port}`);
 });
