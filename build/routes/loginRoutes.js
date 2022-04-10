@@ -23,7 +23,7 @@ router.get("/login", (req, res) => {
                 <label>Password</label>
                 <input name="password" type="password" >
             </div>
-            <button>Submit</button>
+            <button className="btn-login">Login</button>
         </form>
     `);
 });
